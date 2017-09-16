@@ -3,7 +3,6 @@ package project
 import (
 	"math/rand"
 	"time"
-	// "fmt"
 )
 
 //go:generate go run tweets.go
