@@ -9,4 +9,4 @@
 3. `cd project && go generate`
 4. `cd .. && go build wisdom.go` (`GOOS=platform GOARCH=architecture go build wisdom.go` for cross-compiling)
 5. Congrats! Your binary is ready! `mv wisdom /usr/local/bin`
-6. In target repo root folder perform `echo '#!/bin/sh\nwisdom' > .git/hooks/post-commit`
+6. In target repo root folder perform `echo '#!/bin/sh\nwisdom' > .git/hooks/post-commit && chmod 751 .git/hooks/post-commit`
