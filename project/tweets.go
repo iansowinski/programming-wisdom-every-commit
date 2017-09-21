@@ -35,7 +35,7 @@ func main() {
 		for _, tweet := range searchResult {
 			text := tweet.FullText
 
-			if !strings.Contains(text, "RT") && !strings.Contains(text, "http") && !strings.Contains(text, "@") && len(text) != 0 {
+			if !strings.Contains(text, "RT") && strings.Contains(text, '"') && !strings.Contains(text, "http") && !strings.Contains(text, "@") && len(text) != 0 {
 				quotes[maxQuotesIndex] = tweet.FullText
 				maxQuotesIndex += 1
 			}
